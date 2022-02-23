@@ -1,0 +1,115 @@
+/*Variable*/
+:root {
+    --hPanel: 430px;
+    --wPanel: 350px;
+    --shadow: 0px 4px 16px rgb(141, 138, 138);
+    --colorSkyBlue: #41dad6;
+    --colorYellow: #4b78cc;
+    --colorPink: #573fe2;
+  }
+  
+  body {
+    max-height: fit-content;
+  }
+  
+  /*Main*/
+  @-ms-viewport {
+    width: device-width;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    height: 100em;
+  }
+  
+  /*taskbar*/
+  
+  #taskBar {
+    position: fixed;
+    background: linear-gradient(90deg, var(--colorSkyBlue) 0%,var(--colorYellow) 70%, var(--colorPink) 100%);
+    width: 100%;
+    height: 7em;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  
+  /*Links*/
+  
+  .linkContainer {
+    position: relative;
+    max-width: fit-content;
+    margin-right: 3em;
+  }
+  
+  .links img {
+    margin: 0.5em;
+    width: 2.2em;
+  }
+  
+  /*heading*/
+  
+  #heading {
+    position: relative;
+    align-self: center;
+    margin-left: 2em;
+  }
+  
+  #heading h1 {
+    font-weight: 600;
+    color: rgb(56, 53, 53);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  /*mainBody*/
+  
+  .mainBody {
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  /* panel */
+  
+  .panel {
+    background-color: white;
+    height: var(--hPanel);
+    width: var(--wPanel);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    border-radius: 1em;
+  }
+  
+  /*search*/
+  
+  .searchContainer {
+    position: relative;
+  }
+  
+  .searchPacker {
+    margin: 2em;
+  }
+  
