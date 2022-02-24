@@ -24,10 +24,23 @@
     <section class="mainBody">
         <div class="components">
             <div class="panel">
-                <div class="searchContainer">
+                <div class="container searchContainer">
                     <div class="searchPacker">
-                        <input type="text" id="search">
-                        <div id="searchList">
+                        <input type="text" class="searchCountry" id="search">
+                        <!-- <div id="searchList">
+                        </div> -->
+                        <button class="btn" id="btn1">Search country</button>
+                    </div>
+                </div>
+                <div class="container resultContainer">
+                    <div class="resultPacker">
+                        <div class="result">
+                            <div class="resultOutput">
+                                <h1 id="maxTemp">Max temp (&deg;C): ---</h1>
+                            </div>
+                            <div class="resultOutput">
+                                <h1 id="minTemp">Min temp (&deg;C): ---</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -35,17 +48,37 @@
         </div>
         <div class="components">
             <div class="panel">
-                <div class="searchContainer">
+                <div class="searchContainer container">
                     <div class="searchPacker">
-                        <input type="text" id="search">
-                        <div id="searchList">
+                        <input type="text" class="searchPlaces" id="search">
+                        <button class="btn" id="btn2">Search places</button>
+                    </div>
+                </div>
+                <div class="resultContainer container">
+                    <div class="resultPacker">
+                        <div id="icon">
+                            <img id="wIcon" src="" alt="">
+                        </div>
+                        <div class="result">
+                            <div class="resultOutput">
+                                <h1 id="feelsLike">Feels like (&deg;C): ---</h1>
+                            </div>
+                            <div class="resultOutput">
+                                <h1 id="humidity">Humidity: ---</h1>
+                            </div>
+                            <div class="resultOutput">
+                                <h1 id="pressure">Pressure: ---</h1>
+                            </div>
+                            <div class="resultOutput">
+                                <h1 id="temprature">Temprature (&deg;C): ---</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

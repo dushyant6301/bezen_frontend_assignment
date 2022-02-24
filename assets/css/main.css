@@ -89,7 +89,22 @@
     justify-content: space-around;
     align-items: flex-end;
   }
-
+  
+  @media screen and (max-width: 800px) {
+    .mainBody {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .mainBody .components {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
   /* panel */
   
   .panel {
@@ -98,18 +113,145 @@
     width: var(--wPanel);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     box-shadow: var(--shadow);
     border-radius: 1em;
   }
   
   /*search*/
   
-  .searchContainer {
+  .container {
     position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .searchPacker {
+	margin: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
   }
   
-  .searchPacker {
-    margin: 2em;
+  .searchContainer #search {
+    width: 250px;
+    height: 40px;
+    border: 0.1px solid black;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+    font-size: 10pt;
+	margin: 1em;
+  }
+
+/*Button*/
+  .btn {
+    display: flex;
+    padding: 0.7em;
+    font-size: 10pt;
+    border: 0px solid black;
+    background-color: white;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+  }
+
+  /*Result*/
+  .resultPacker {
+	margin: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .cName h1 {
+	  font-size: large;
+  }
+
+  .result {
+	  display: flex;
+	  flex-direction: column;
+  }
+
+  .resultOutput {
+	  margin: 0.5em;
+  }
+  
+  /*Size adjustment*/
+  @media screen and (max-width: 1280px) {
+    :root {
+      --hPanel: 390px;
+      --wPanel: 310px;
+    }
+    body {
+      font-size: 10pt;
+    }
+    .searchContainer #search {
+      width: 230px;
+      height: 33px;
+      font-size: 9.5pt;
+    }
+    .searchContainer #searchList {
+      font-size: 9.5pt;
+    }
+    .btn {
+        width: 135px;
+        font-size: 9.5pt;
+    }
+    .links img {
+      width: 2em;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    :root {
+      --hPanel: 370px;
+      --wPanel: 300px;
+    }
+    body {
+      font-size: 8pt;
+    }
+    .searchContainer #search {
+      width: 220px;
+      height: 28px;
+      font-size: 7.5pt;
+    }
+    .searchContainer #searchList {
+      font-size: 7.5pt;
+    }
+    .btn {
+        width: 120px;
+        font-size: 7.5pt;
+    }
+    .links img {
+      width: 1.8em;
+    }
+  }
+  @media screen and (max-width: 376px) {
+    :root {
+      --hPanel: 330px;
+      --wPanel: 280px;
+    }
+    body {
+      font-size: 7pt;
+    }
+    .searchContainer #search {
+      width: 200px;
+      height: 27px;
+      font-size: 7pt;
+    }
+    .searchContainer #searchList {
+      font-size: 7pt;
+    }
+
+    .btn {
+      font-size: 7pt;
+      width: 110px;
+    }
+    .links img {
+      width: 1.6em;
+    }
   }
   
