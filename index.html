@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body>
+<body onload="checkPreferences()">
+    <a href="https://pngtree.com/free-backgrounds'">free background photos from Pngtree.com</a>
     <section id="taskBar">
         <div id="heading">
             <h1>WEATHER SEARCH</h1>
@@ -27,8 +28,6 @@
                 <div class="container searchContainer">
                     <div class="searchPacker">
                         <input type="text" class="searchCountry" id="search">
-                        <!-- <div id="searchList">
-                        </div> -->
                         <button class="btn" id="btn1">Search country</button>
                     </div>
                 </div>
@@ -36,10 +35,10 @@
                     <div class="resultPacker">
                         <div class="result">
                             <div class="resultOutput">
-                                <h1 id="maxTemp">Max temp (&deg;C): ---</h1>
+                                <h1 id="maxTemp">Max temperature (&deg;C): ---</h1>
                             </div>
                             <div class="resultOutput">
-                                <h1 id="minTemp">Min temp (&deg;C): ---</h1>
+                                <h1 id="minTemp">Min temperature (&deg;C): ---</h1>
                             </div>
                         </div>
                     </div>
@@ -58,6 +57,7 @@
                     <div class="resultPacker">
                         <div id="icon">
                             <img id="wIcon" src="" alt="">
+                            <h1 id="stat">____</h1>
                         </div>
                         <div class="result">
                             <div class="resultOutput">
@@ -70,7 +70,7 @@
                                 <h1 id="pressure">Pressure: ---</h1>
                             </div>
                             <div class="resultOutput">
-                                <h1 id="temprature">Temprature (&deg;C): ---</h1>
+                                <h1 id="temprature">Temperature (&deg;C): ---</h1>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 /*Variable*/
 :root {
-    --hPanel: 430px;
-    --wPanel: 350px;
+    --hPanel: 500px;
+    --wPanel: 400px;
     --shadow: 0px 4px 16px rgb(141, 138, 138);
     --colorSkyBlue: #41dad6;
     --colorYellow: #4b78cc;
@@ -10,6 +10,11 @@
   
   body {
     max-height: fit-content;
+    background-image: url("../../store/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
   }
   
   /*Main*/
@@ -28,7 +33,7 @@
   }
   
   body {
-    background: #ffffff;
+    /* background: #ffffff; */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 11pt;
     line-height: 1.5;
@@ -159,25 +164,28 @@
   }
 
   /*Result*/
+
+.resultContainer {
+  margin-bottom: 2em;
+  height:inherit;
+}
+
   .resultPacker {
-	margin: 2em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
   }
 
-  .cName h1 {
-	  font-size: large;
-  }
 
   .result {
 	  display: flex;
 	  flex-direction: column;
   }
 
-  .resultOutput {
-	  margin: 0.5em;
+
+  .resultOutput h1 {
+	  font-size: small;
   }
   
   /*Size adjustment*/
